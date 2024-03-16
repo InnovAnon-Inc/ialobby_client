@@ -1,11 +1,13 @@
 import "phaser";
+import { WelcomeScene } from "./welcomeScene";
 
 const config: GameConfig = {
   title: "IA Game Lobby",
   width: 800,
   height: 600,
-  parent: "game"
-  backgroundColor: "#150d0d"
+  parent: "game",
+  backgroundColor: "#150d0d",
+  scene: [WelcomeScene]
 };
 
 export class StarfallGame extends Phaser.Game {
