@@ -14,7 +14,7 @@ export class WelcomeScene extends Phaser.Scene {
   const baseUrl = process.env.IALOBBY_SERVER;
 
   // Request welcome message from the server
-  fetch(`${baseUrl}/welcome-message`)
+  fetch(`${baseUrl}/connect`)
     .then((response) => response.text())
     .then((welcomeMessage) => {
       // Display the received welcome message
