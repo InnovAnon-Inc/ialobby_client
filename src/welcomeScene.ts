@@ -13,6 +13,8 @@ export class WelcomeScene extends Phaser.Scene {
   // Retrieve the base URL from the IALOBBY_SERVER environment variable
   const baseUrl = process.env.IALOBBY_SERVER;
 
+  console.log('WelcomeScene.create() fetch');
+
   // Request welcome message from the server
   fetch(`${baseUrl}/connect`)
     .then((response) => response.text())
