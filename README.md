@@ -1,3 +1,5 @@
+ABANDONED: FUCK CORS
+
 # IA Lobby (Client)
 IA Game Lobby Frontend
 ==========
