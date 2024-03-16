@@ -8,7 +8,13 @@ export class WelcomeScene extends Phaser.Scene {
   create(): void {
 
   // Request welcome message from the server
-  fetch("http://your-server-url/welcome-message")
+  //fetch("http://your-server-url/welcome-message")
+	  //
+  // Retrieve the base URL from the IALOBBY_SERVER environment variable
+  const baseUrl = process.env.IALOBBY_SERVER;
+
+  // Request welcome message from the server
+  fetch(`${baseUrl}/welcome-message`)
     .then((response) => response.text())
     .then((welcomeMessage) => {
       // Display the received welcome message
