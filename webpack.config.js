@@ -1,4 +1,6 @@
 const path = require('path');
+const webpack = require('webpack');
+
 module.exports = {
   entry: './src/app.ts',
   module: {
@@ -17,5 +19,11 @@ module.exports = {
     filename: 'app.js',
     path: path.resolve(__dirname, 'dist')
   },
-  mode: 'development'
+  mode: 'development',
+
+  plugins: [
+    new webpack.DefinePlugin({
+      IALOBBY_SERVER: JSON.stringify(process.env.IALOBBY_SERVER),
+    }),
+  ],
 };
