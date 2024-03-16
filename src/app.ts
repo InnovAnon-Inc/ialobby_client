@@ -1,6 +1,8 @@
 import "phaser";
 import { WelcomeScene } from "./welcomeScene";
 
+type GameConfig = Phaser.Types.Core.GameConfig;
+
 const config: GameConfig = {
   title: "IA Game Lobby",
   width: 800,
