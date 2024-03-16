@@ -1,0 +1,56 @@
+/* black : #150d0d */
+/* maroon: #430e0e */
+/* white : #dadada */
+/* red   : #dc0d0d */
+/* green : #0ddc0d (TODO) */
+
+body { /* I'm sorry, Dave */
+	background-color: #430e0e; /* maroon */
+	background-image: url("https://github.com/InnovAnon-Inc/logo/releases/download/v1.0.243/logo-visible.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  	background-position: center;
+	color: #0ddc0d; /* green */
+}
+
+h1, footer { /* yantra-like effect with green-screen text */
+	background-color: #150d0dA0; /* black */
+	background-image: radial-gradient(ellipse, #430e0eA0, #150d0dA0, #dadadaA0);
+	text-align: center;
+	border-radius: 50%;
+	text-shadow: 0 0 1px #150d0d; /* black */
+}
+
+a { /* make it pop */
+	color: #dc0d0d; /* red */
+	text-shadow: 0 0 1px #150d0d; /* black */
+}
+
+#game {
+	/*
+	display: flex;
+  	justify-content: center;
+	*/
+
+	/*margin: auto;*/
+
+	max-width: fit-content;
+  	margin-left: auto;
+  	margin-right: auto;
+
+	box-shadow: 7px 5px 3px 13px #dadadaA0;
+	border-radius: 11px;
+
+	border-style: inset;
+	border-width: thick;
+	border-color: #430e0eA0;
+
+	min-width: 800px;
+	min-height: 600px;
+	/*
+	width: 800px;
+	height: 600px;
+	*/
+}
+
