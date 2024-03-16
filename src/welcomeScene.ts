@@ -19,6 +19,8 @@ export class WelcomeScene extends Phaser.Scene {
   fetch(`${baseUrl}/connect`)
     .then((response) => response.text())
     .then((welcomeMessage) => {
+  	console.log('WelcomeScene.create() fetch callback welcomeMessage: %s', welcomeMessage);
+
       // Display the received welcome message
       const welcomeText = this.add.text(200, 200, welcomeMessage, {
         fontSize: "24px",
