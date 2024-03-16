@@ -1,0 +1,29 @@
+{
+  "name": "ialobby_client",
+  "version": "1.0.0",
+  "description": "IA Game Lobby",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack --watch & live-server --port=8085",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InnovAnon-Inc/ialobby_client.git"
+  },
+  "author": "Innovations Anonymous",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/InnovAnon-Inc/ialobby_client/issues"
+  },
+  "homepage": "https://github.com/InnovAnon-Inc/ialobby_client#README.md",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "phaser": "^3.80.1",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.2",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  }
+}
