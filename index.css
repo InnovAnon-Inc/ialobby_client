@@ -27,14 +27,7 @@ a { /* make it pop */
 	text-shadow: 0 0 1px #150d0d; /* black */
 }
 
-#game {
-	/*
-	display: flex;
-  	justify-content: center;
-	*/
-
-	/*margin: auto;*/
-
+#game { /* soft frame */
 	max-width: fit-content;
   	margin-left: auto;
   	margin-right: auto;
@@ -48,9 +41,4 @@ a { /* make it pop */
 
 	min-width: 800px;
 	min-height: 600px;
-	/*
-	width: 800px;
-	height: 600px;
-	*/
 }
-
