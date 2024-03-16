@@ -60,5 +60,5 @@ export class WelcomeScene extends Phaser.Scene {
         this.scene.start("LoginScene");
       });
     });
+  }
 }
-
